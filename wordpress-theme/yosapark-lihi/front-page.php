@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html <?php language_attributes(); ?>>
+<head>
+  <meta charset="<?php bloginfo('charset'); ?>">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="yosapark Lihi（ヨサパーク リヒ）は神奈川県相模原市・南橋本駅徒歩2分の温活痩身専門サロン。水素ハーブ蒸し「ルルオン」とリンパマッサージのW施術で、無理なく継続できるダイエットをサポートします。">
+  <meta property="og:title" content="yosapark Lihi | 温活痩身専門サロン｜相模原・南橋本">
+  <meta property="og:image" content="<?php echo esc_url(lihi_asset_url('images/top.png')); ?>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <?php wp_head(); ?>
+</head>
+<body <?php body_class(); ?>>
+  <?php wp_body_open(); ?>
+  <header id="header" class="header" aria-label="ヘッダー">
+    <div class="header__inner">
+      <a href="#top" class="header__logo" aria-label="yosapark Lihi トップへ">
+        <span class="header__logo-text">yosapark <em>Lihi</em></span>
+      </a>
+
+      <nav class="header__nav" aria-label="グローバルナビゲーション">
+        <ul>
+          <li><a href="#top"><span class="en">TOP</span><span class="ja">トップ</span></a></li>
+          <li><a href="#concept"><span class="en">CONCEPT</span><span class="ja">コンセプト</span></a></li>
+          <li><a href="#service"><span class="en">SERVICE</span><span class="ja">サービス</span></a></li>
+          <li><a href="#reason"><span class="en">REASON</span><span class="ja">選ばれる理由</span></a></li>
+          <li><a href="#about"><span class="en">ABOUT</span><span class="ja">代表者紹介</span></a></li>
+          <li><a href="#access"><span class="en">ACCESS</span><span class="ja">アクセス</span></a></li>
+          <li><a href="#contact" class="header__contact-btn"><span class="en">CONTACT</span><span class="ja">ご予約・お問い合わせ</span></a></li>
+        </ul>
+      </nav>
+
+      <button class="header__hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false" aria-controls="drawer">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="drawer" id="drawer" aria-hidden="true">
+    <nav class="drawer__nav" aria-label="モバイルナビゲーション">
+      <ul>
+        <li><a href="#top">TOP <span>トップ</span></a></li>
+        <li><a href="#concept">CONCEPT <span>コンセプト</span></a></li>
+        <li><a href="#service">SERVICE <span>サービス</span></a></li>
+        <li><a href="#equipment">EQUIPMENT <span>機器・ハーブ</span></a></li>
+        <li><a href="#reason">REASON <span>選ばれる理由</span></a></li>
+        <li><a href="#about">ABOUT <span>代表者紹介</span></a></li>
+        <li><a href="#access">ACCESS <span>アクセス</span></a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+    <section class="hero" id="top" data-section="hero">
+      <div class="hero__bg">
+        <img src="<?php echo esc_url(lihi_asset_url('images/top.png')); ?>" alt="yosapark Lihi 施術風景" fetchpriority="high">
+      </div>
+      <div class="hero__overlay"></div>
+
+      <div class="hero__content">
+        <p class="hero__label">温活痩身専門サロン / 神奈川・相模原</p>
+        <h1 class="hero__title" aria-label="無理なく変わる。身体の内側から美しくなる。">
+          <span class="hero__title-line">無理なく変わる</span>
+          <span class="hero__title-line"><span>体質から整える</span></span>
+          <span class="hero__title-line">ダイエット</span>
+        </h1>
+        <p class="hero__sub">
+          水素ハーブ蒸し「ルルオン」×リンパマッサージのW施術で<br>
+          代謝を高め、老廃物を排出。<br>
+          リバウンドしない身体づくりをサポートします。
+        </p>
+        <div class="hero__badges hero__badges--mobile" aria-label="サロンの特徴">
+          <div class="hero__badge">
+            <span class="badge__number">25<small>年</small></span>
+            <span class="badge__text">病院勤務の<br>経験を活かした施術</span>
+          </div>
+          <div class="hero__badge">
+            <span class="badge__label">W施術</span>
+            <span class="badge__text">医療知識に基づく<br>体質改善アプローチ</span>
+          </div>
+          <div class="hero__badge">
+            <span class="badge__label">完全個室</span>
+            <span class="badge__text">プライベートサロン<br>完全予約制</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__badges hero__badges--desktop" aria-label="サロンの特徴">
+        <div class="hero__badge">
+          <span class="badge__number">25<small>年</small></span>
+          <span class="badge__text">病院勤務の<br>経験を活かした施術</span>
+        </div>
+        <div class="hero__badge">
+          <span class="badge__label">W施術</span>
+          <span class="badge__text">医療知識に基づく<br>体質改善アプローチ</span>
+        </div>
+        <div class="hero__badge">
+          <span class="badge__label">完全個室</span>
+          <span class="badge__text">プライベートサロン<br>完全予約制</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section concept fade-up" id="concept" data-section="concept">
+      <div class="section__inner">
+        <div class="section-header fade-up">
+          <h2><span class="en">Concept</span><span class="ja">コンセプト</span></h2>
+        </div>
+
+        <div class="concept__body">
+          <div class="concept__image animate-item">
+            <img src="<?php echo esc_url(lihi_asset_url('images/salon_room_full_view.jpg')); ?>" alt="yosapark Lihi 施術室" loading="lazy">
+          </div>
+          <div class="concept__text-wrap animate-item">
+            <div class="concept__catch">
+              <p>"無理なく変わる"<br>本格痩身専門サロン</p>
+            </div>
+            <div class="concept__text">
+              <p>当サロンは、食事制限やハードな運動に頼らず、<strong>身体の内側から整えていく温活痩身サロン</strong>です。</p>
+              <p>水素ハーブ蒸し「ルルオン」とリンパマッサージを組み合わせたW施術により、代謝を高めながら老廃物の排出を促進。無理なく、そして継続できるダイエットをサポートします。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="concept__points">
+          <div class="concept__point animate-item">
+            <div class="concept__point-icon" aria-hidden="true">🌿</div>
+            <h3>体質改善から始まる<br>結果重視のボディメイク</h3>
+            <p>冷え・むくみ・脂肪のつきやすさは、体質が原因であることが多くあります。身体を芯から温めることで基礎代謝を向上させ、脂肪燃焼を促進。短期間でのサイズダウンを目指しながら、リバウンドしにくい身体づくりを行います。</p>
+          </div>
+          <div class="concept__point animate-item">
+            <div class="concept__point-icon" aria-hidden="true">💆</div>
+            <h3>女性特有のお悩みに<br>対応するトータルケア</h3>
+            <p>ダイエットだけでなく、冷え・むくみ・妊活・フェムケアなど女性特有の悩みにもアプローチ。一人ひとりの目的に合わせた施術で、健康と美しさの両立をサポートします。</p>
+          </div>
+          <div class="concept__point animate-item">
+            <div class="concept__point-icon" aria-hidden="true">🔒</div>
+            <h3>完全個室の<br>プライベート空間</h3>
+            <p>完全予約制のプライベートサロンのため、人目を気にせずゆったり施術を受けていただけます。リラックスしながら身体を整える、あなただけの特別な時間をご提供します。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <?php lihi_render_service_section(); ?>
+
+    <section class="section equipment fade-up" id="equipment" data-section="equipment">
+      <div class="section__inner">
+        <div class="section-header fade-up">
+          <h2><span class="en">Equipment</span><span class="ja">使用機器・ハーブ</span></h2>
+          <p class="section-lead">厳選された機器と自然のハーブが、あなたの身体を変える</p>
+        </div>
+
+        <div class="equipment__list">
+          <article class="equipment__item animate-item">
+            <div class="equipment__item-image">
+              <img src="<?php echo esc_url(lihi_asset_url('images/product_luluonn_herb_ingredients_circle.jpg')); ?>" alt="LULUONNオリジナルハーブ 11種配合" loading="lazy">
+            </div>
+            <div class="equipment__item-body">
+              <h3>LULUONNオリジナルハーブ</h3>
+              <p class="equipment__item-sub">全11種類のハーブを配合</p>
+              <p>美しさを最大限に引き出すLULUONNオリジナルハーブ。ガイヨウ・インチンコウ・トウキなど、東洋と西洋の植物エキスを独自ブレンド。荒れ性・冷え症・疲労回復・産前産後のケアに効果的です。</p>
+              <img src="<?php echo esc_url(lihi_asset_url('images/product_luluonn_herb_finehurb_burning.jpg')); ?>" alt="Fine Herb / Burning Herb" loading="lazy" style="max-width:260px; margin-top:16px; border-radius:8px;">
+            </div>
+          </article>
+
+          <article class="equipment__item equipment__item--reverse animate-item">
+            <div class="equipment__item-image">
+              <img src="<?php echo esc_url(lihi_asset_url('images/equipment_hydrogen_water_fixhyte.jpg')); ?>" alt="水素水生成器 Fixhyte neo" loading="lazy">
+            </div>
+            <div class="equipment__item-body">
+              <h3>水素水生成器<br><em>Fixhyte neo</em></h3>
+              <p class="equipment__item-sub">HYBRID POT 高性能水素生成</p>
+              <p>青白い光を放つ最先端の水素水生成器「Fixhyte neo」。高濃度の水素を生成し、活性酸素の除去・アンチエイジング・代謝向上をサポートします。施術中に水素水をご提供します。</p>
+            </div>
+          </article>
+
+          <article class="equipment__item animate-item">
+            <div class="equipment__item-image">
+              <img src="<?php echo esc_url(lihi_asset_url('images/equipment_yomogi_footbath.jpg')); ?>" alt="水素フットバス" loading="lazy">
+            </div>
+            <div class="equipment__item-body">
+              <h3>水素フットバス</h3>
+              <p class="equipment__item-sub">芯から温める足浴ケア</p>
+              <p>水素を含んだ温かなフットバスで足元からじんわり温めます。全身の血行を促進しながら、冷えやむくみのケアをサポート。ルルオン施術との組み合わせでさらに高い温活効果を発揮します。</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reason fade-up" id="reason" data-section="reason">
+      <div class="section__inner">
+        <div class="section-header fade-up">
+          <h2><span class="en">Reason</span><span class="ja">選ばれる理由</span></h2>
+          <p class="section-lead">yosapark Lihi が多くの女性に選ばれる4つの理由</p>
+        </div>
+
+        <ul class="reason__list">
+          <li class="reason__item animate-item">
+            <div class="reason__item-image">
+              <img src="<?php echo esc_url(lihi_asset_url('images/about_owner_counseling.jpg')); ?>" alt="丁寧なカウンセリング" loading="lazy">
+              <span class="reason__badge">01</span>
+            </div>
+            <div class="reason__item-body">
+              <p class="reason__item-sub">根拠のある施術</p>
+              <h3>病院勤務25年の<br>医療知識に基づく施術</h3>
+              <p>看護・医療の現場で25年培ってきた専門知識を活かし、身体の仕組みから理解した本格的な施術を提供。表面的なケアではなく、体質の根本改善にアプローチします。</p>
+            </div>
+          </li>
+
+          <li class="reason__item animate-item">
+            <div class="reason__item-image">
+              <img src="<?php echo esc_url(lihi_asset_url('images/service_lymph_massage_tool_back.jpg')); ?>" alt="W施術で高い効果" loading="lazy">
+              <span class="reason__badge">02</span>
+            </div>
+            <div class="reason__item-body">
+              <p class="reason__item-sub">相乗効果で結果を出す</p>
+              <h3>水素ハーブ蒸し×リンパの<br>W施術で高い効果</h3>
+              <p>温めながら流す、相乗効果の高いW施術。水素ハーブ蒸し「ルルオン」で芯から温め、代謝が上がった最高のタイミングでリンパマッサージを行うことで、老廃物の排出と脂肪燃焼を最大化します。</p>
+            </div>
+          </li>
+
+          <li class="reason__item animate-item">
+            <div class="reason__item-image">
+              <img src="<?php echo esc_url(lihi_asset_url('images/product_luluonn_herb_ingredients_circle.jpg')); ?>" alt="フェムケア・女性特有のお悩みに対応" loading="lazy">
+              <span class="reason__badge">03</span>
+            </div>
+            <div class="reason__item-body">
+              <p class="reason__item-sub">フェム温活アンバサダー認定</p>
+              <h3>女性特有のお悩みに<br>専門的に対応</h3>
+              <p>女性活躍支援協会認定フェム温活アンバサダーとして、冷え・ホルモンバランス・妊活・フェムケアなど女性特有のお悩みにも専門的な視点からアプローチ。ダイエット以上のトータルケアをご提供します。</p>
+            </div>
+          </li>
+
+          <li class="reason__item animate-item">
+            <div class="reason__item-image">
+              <img src="<?php echo esc_url(lihi_asset_url('images/salon_room_luluonn_chair.jpg')); ?>" alt="完全個室プライベートサロン" loading="lazy">
+              <span class="reason__badge">04</span>
+            </div>
+            <div class="reason__item-body">
+              <p class="reason__item-sub">安心してお任せいただける環境</p>
+              <h3>完全個室・完全予約制の<br>プライベートサロン</h3>
+              <p>他のお客様と顔を合わせることのない完全個室空間。人目を気にせずリラックスして施術を受けていただけます。丁寧なカウンセリングで、あなたのお悩みにじっくり向き合います。</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section about fade-up" id="about" data-section="about">
+      <div class="section__inner">
+        <div class="section-header fade-up">
+          <h2><span class="en">About</span><span class="ja">代表者紹介</span></h2>
+        </div>
+
+        <div class="about__body">
+          <div class="about__image-wrap animate-item">
+            <img src="<?php echo esc_url(lihi_asset_url('images/about_owner_portrait_full.jpg')); ?>" alt="yosapark Lihi 代表" loading="lazy" class="about__portrait">
+            <div class="about__credential">
+              <span>女性活躍支援協会認定<br>フェム温活アンバサダー</span>
+            </div>
+          </div>
+
+          <div class="about__mobile-highlights animate-item" aria-label="代表者の資格・経歴">
+            <div class="about__mobile-highlight about__mobile-highlight--credential">
+              <span>女性活躍支援協会認定</span>
+              <strong>フェム温活アンバサダー</strong>
+            </div>
+            <div class="about__mobile-highlight about__mobile-highlight--career">
+              <span>CAREER</span>
+              <strong>病院勤務 25年</strong>
+            </div>
+          </div>
+
+          <div class="about__text animate-item">
+            <div class="about__career">
+              <span class="about__career-label">CAREER</span>
+              <p>病院勤務 <strong>25年</strong></p>
+            </div>
+
+            <p class="about__message">病院勤務25年の経験を活かし、これまで多くの女性のお悩みに寄り添ってきました。</p>
+            <p>身体の不調は一人ひとり原因が異なり、表面のケアだけでは根本的な改善につながらないことも少なくありません。当サロンでは丁寧なカウンセリングを大切にし、生活習慣や体質を踏まえながら、無理のない形で身体を整えていくサポートを行っています。</p>
+            <p>お客様が安心して通える存在であることを第一に、じっくりとお悩みに向き合います。また、女性活躍支援協会認定フェム温活アンバサダーとして、冷え・ホルモンバランス・体質改善など女性特有のお悩みにも専門的な視点から対応しています。</p>
+            <p>些細なことでも構いませんので、どうぞお気軽にご相談ください。皆さまが心身ともに前向きな毎日を過ごせるよう、心を込めてお手伝いいたします。</p>
+
+            <p class="about__sign">yosapark Lihi　代表</p>
+
+            <div class="about__credentials">
+              <h4>資格・認定</h4>
+              <ul>
+                <li>女性活躍支援協会認定 フェム温活アンバサダー</li>
+                <li>病院勤務25年（医療・看護の専門知識）</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__sub-images">
+          <div class="about__sub-image animate-item">
+            <img src="<?php echo esc_url(lihi_asset_url('images/about_owner_counseling.jpg')); ?>" alt="丁寧なカウンセリング" loading="lazy">
+            <p>丁寧なカウンセリング</p>
+          </div>
+          <div class="about__sub-image animate-item">
+            <img src="<?php echo esc_url(lihi_asset_url('images/service_lymph_massage_hands_closeup.jpg')); ?>" alt="熟練の施術技術" loading="lazy">
+            <p>熟練の施術技術</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section access fade-up" id="access" data-section="access">
+      <div class="section__inner">
+        <div class="section-header fade-up">
+          <h2><span class="en">Access</span><span class="ja">アクセス・サロン情報</span></h2>
+        </div>
+
+        <div class="access__body">
+          <div class="access__info animate-item">
+            <h3>yosapark Lihi（ヨサパーク リヒ）</h3>
+
+            <dl class="access__detail">
+              <dt>住所</dt>
+              <dd>
+                神奈川県相模原市中央区南橋本１丁目<br>
+                <small>※プライベートサロンのため、詳細住所はご予約確定後にお知らせいたします</small>
+              </dd>
+              <dt>アクセス</dt>
+              <dd>相模線「南橋本駅」より徒歩2分<br>駐車場あり</dd>
+              <dt>営業時間</dt>
+              <dd>9:00〜22:00<br><small>受付: 20:00まで / ※日によって変動あり</small></dd>
+              <dt>定休日</dt>
+              <dd>不定休</dd>
+              <dt>電話</dt>
+              <dd><a href="tel:08050961257">080-5096-1257</a></dd>
+              <dt>LINE</dt>
+              <dd><a href="https://lin.ee/SFlvpBx" target="_blank" rel="noopener">LINEでお問い合わせ</a></dd>
+            </dl>
+
+            <div class="access__note">
+              <p>⚠️ プライベートサロンのため、詳細な住所はご予約確定後にご案内いたします。お気軽にお問い合わせください。</p>
+            </div>
+
+            <div class="access__salon-images">
+              <img src="<?php echo esc_url(lihi_asset_url('images/salon_room_luluonn_chair.jpg')); ?>" alt="完全個室のプライベート空間" loading="lazy">
+              <img src="<?php echo esc_url(lihi_asset_url('images/salon_room_full_view.jpg')); ?>" alt="施術機器が揃った清潔な施術室" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact fade-up" id="contact" data-section="contact">
+      <div class="section__inner">
+        <div class="section-header fade-up">
+          <h2><span class="en">Contact</span><span class="ja">ご予約・お問い合わせ</span></h2>
+          <p>ご予約・お問い合わせは、<br>下記より受付ております。<br>お気軽にご連絡くださいませ。</p>
+          <p class="contact__hours">営業時間: 9:00〜22:00 / 受付: 20:00まで（不定休）</p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__logo">
+        <a href="#top">
+          <span class="footer__logo-text">yosapark <em>Lihi</em></span>
+          <span class="footer__logo-sub">ヨサパーク リヒ</span>
+        </a>
+      </div>
+
+      <nav class="footer__nav" aria-label="フッターナビゲーション">
+        <ul>
+          <li><a href="#concept">コンセプト</a></li>
+          <li><a href="#service">サービス</a></li>
+          <li><a href="#reason">選ばれる理由</a></li>
+          <li><a href="#about">代表者紹介</a></li>
+          <li><a href="#access">アクセス</a></li>
+        </ul>
+      </nav>
+
+      <a href="#top" class="footer__page-top" aria-label="ページトップへ">PAGE TOP ↑</a>
+    </div>
+
+    <p class="footer__copyright">Copyright © yosapark Lihi. All Rights Reserved.</p>
+  </footer>
+
+  <div class="fixed-cta" id="fixed-cta" aria-label="固定お問い合わせメニュー">
+    <a href="https://www.instagram.com/sagamidenki.yell/reel/DSyloPvien_/?hl=mr" target="_blank" rel="noopener" class="fixed-cta__btn fixed-cta__btn--instagram" aria-label="Instagram">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+      <small>Instagram</small>
+    </a>
+    <a href="tel:08050961257" class="fixed-cta__btn fixed-cta__btn--tel" aria-label="電話">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+      <small>Tel</small>
+    </a>
+    <a href="https://lin.ee/SFlvpBx" target="_blank" rel="noopener" class="fixed-cta__btn fixed-cta__btn--line" aria-label="LINE">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 4.5C18.3 2.4 15.3 1.3 12 1.3S5.7 2.4 3.5 4.5C1.4 6.5.3 9.1.3 11.9c0 4.9 4.2 9 9.8 9.8.4.1.8.2 1.1.5.5.4.4 1.1.4 1.5 0 .2.2.4.4.3 2.1-.9 8.3-4.1 10.5-9.1.8-1.7 1.2-3.5 1.2-5.2 0-2-.7-3.8-2.2-5.2zM8 13.2H5.6V8.6h1.1v3.6H8v1zm2.1 0H9V8.6h1.1v4.6zm5 0h-1.1l-2-2.7v2.7h-1.1V8.6H12l2 2.7V8.6h1.1v4.6zm3.8-3.6h-1.9v.8h1.7v1h-1.7v.8h1.9v1h-3V8.6h3v1z"/></svg>
+      <small>LINE</small>
+    </a>
+  </div>
+  <?php wp_footer(); ?>
+</body>
+</html>
